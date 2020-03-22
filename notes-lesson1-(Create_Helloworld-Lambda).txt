@@ -1,0 +1,7 @@
+1. sls --help - (all existing comand into serverless framework)
+2. sls create --help - (existing command for creating serverless project)
+3. sls invoke --help - (existing command for invoking)
+
+3. https://github.com/serverless/serverless/tree/master/lib/plugins/create/templates (Differnt starting tempaltes for different language)
+4 serverless create -t aws-nodejs -p <our directory> - (Create sls project)
+5. sls ivoke local -f hello -p <path to our ivent.js or yml file> - (run our sls in local -f it's our function name)

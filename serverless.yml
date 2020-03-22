@@ -1,11 +1,17 @@
-service: serverless
+service: helloWorld-sls
 
 provider:
   name: aws
-  runtime: nodejs8.10
-  profile: femasters
-  region: us-west-1
-  stage: dev
+  runtime: nodejs12.16
+#  profile: STRELOK150596
+#  region: eu-west-1
+#  stage: dev
+
+#Our sls functions hello-(it's name of our functions), handler: <path to our functions>
+
+functions:
+  helloworld:
+    handler: src/helloworld.hello
 
 plugins:
   - serverless-offline
